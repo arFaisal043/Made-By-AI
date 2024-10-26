@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <!-- Logo on the left -->
+          <a class="navbar-brand" href="#"><h2>Dev Dynamo</h2>
+            <!-- <img src="./img/20220406_054225_0000.png" alt="Logo" style="height: 40px;"> -->
+          </a>
+    
+          <!-- Button for toggling navbar on small screens -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Centered navigation links -->
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Our Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="#services">Service 1</a>
+                  <a class="dropdown-item" href="#">Service 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Our Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+    
+            <!-- "Get Started" button -->
+            <div class="d-md-none d-block">
+              <a href="#" class="btn btn-primary mt-2 mb-2">Get Started</a>
+            </div>
+          </div>
+    
+          <!-- "Get Started" button on the right for larger screens -->
+          <div class="d-none d-md-block">
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </nav>
+    
+    
+
+
+<section id="home">
+<div id="heroSlider" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
+      <li data-target="#heroSlider" data-slide-to="1"></li>
+      <li data-target="#heroSlider" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('https://www.cumanagement.com/sites/default/files/2018-09/happy-company-workers.jpg');">
+        <div class="slider-overlay">
+          <div>
+            <h1 class="display-4 font-weight-bold">Welcome to Our Website</h1>
+            <p class="lead">Discover the best services to grow your business.</p>
+            <p class="lead">Join us on a journey of innovation and excellence.</p>
+            <a href="#" class="btn btn-warning mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('https://images.ctfassets.net/3s5io6mnxfqz/5925yJyZW7Acg3oKrKzMMu/f09be95d1b827ad2c3518ccb6504440f/positions-in-a-company.jpeg');">
+        <div class="slider-overlay">
+          <div>
+            <h1 class="display-4 font-weight-bold">Explore Our Projects</h1>
+            <p class="lead">See what we have achieved for our clients worldwide.</p>
+            <p class="lead">Your success is our mission.</p>
+            <a href="#" class="btn btn-warning mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('https://media.licdn.com/dms/image/D4D12AQGkAR0QnBbnzw/article-cover_image-shrink_720_1280/0/1703975322207?e=2147483647&v=beta&t=pIqCdKoHq-dT42SqJRerh1Hp2-YSXK-Urxj-XVOLya0');">
+        <div class="slider-overlay">
+          <div>
+            <h1 class="display-4 font-weight-bold">Get Started with Us</h1>
+            <p class="lead">We offer comprehensive solutions to meet your needs.</p>
+            <p class="lead">Let’s build something great together.</p>
+            <a href="#" class="btn btn-warning mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!-- <span class="sr-only">Previous</span> -->
+    </a>
+    <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <!-- <span class="sr-only">Next</span> -->
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Tabs -->
+        <div class="col-md-6">
+          <h2 class="about-heading">About Us</h2>
+          <!-- Tabs Navigation -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab" aria-controls="pills-company" aria-selected="true">Our Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-mission-tab" data-toggle="pill" href="#pills-mission" role="tab" aria-controls="pills-mission" aria-selected="false">Our Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-vision-tab" data-toggle="pill" href="#pills-vision" role="tab" aria-controls="pills-vision" aria-selected="false">Our Vision</a>
+            </li>
+          </ul>
+          <!-- Tabs Content -->
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Our Company Tab -->
+            <div class="tab-pane fade show active" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
+              <h3>Our Company</h3>
+              <p>We are a forward-thinking company focused on delivering innovative solutions that meet the needs of our diverse clientele. Our team is committed to excellence and strives to exceed expectations in every project.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+            <!-- Our Mission Tab -->
+            <div class="tab-pane fade" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission-tab">
+              <h3>Our Mission</h3>
+              <p>Our mission is to empower businesses by providing high-quality services and solutions that drive growth and success. We aim to build lasting partnerships with our clients through integrity, innovation, and commitment.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+            <!-- Our Vision Tab -->
+            <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
+              <h3>Our Vision</h3>
+              <p>Our vision is to be a global leader in our industry, known for our creativity, customer-centric approach, and unwavering commitment to quality. We aspire to create a positive impact on the communities we serve.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Right Side: Image -->
+        <div class="col-md-6">
+          <!-- <img src="https://techcrunch.com/wp-content/uploads/2023/01/GettyImages-1356364310.jpg?w=1280" alt="About Us Image" class="img-fluid"> -->
+          <img id="about-img" src="https://www.searchenginejournal.com/wp-content/uploads/2022/01/about-us-page-examples-1-61fd8f9784626-sej.jpg" alt="About Us Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- services section -->
+
+<section id="services" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-3">Our Services</h2>
+        <p class="mb-5">We offer a range of services designed to help you achieve your goals. Our team is dedicated to providing innovative solutions, ensuring customer satisfaction, and driving success for your business.</p>
+
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-cog fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 1</h5>
+                        <p class="card-text">Our first service is tailored to meet your needs and provide optimal solutions to enhance efficiency and productivity.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 2</h5>
+                        <p class="card-text">Our second service provides in-depth analysis and strategy to take your business to the next level.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 3</h5>
+                        <p class="card-text">Our third service involves technology-driven solutions for modern business challenges.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Service 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-bullhorn fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 4</h5>
+                        <p class="card-text">Our fourth service focuses on brand promotion to enhance your business visibility.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-headset fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 5</h5>
+                        <p class="card-text">Our fifth service offers 24/7 support to keep your operations running smoothly.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-user-shield fa-2x"></i>
+                        </div>
+                        <h5 class="card-title">Service 6</h5>
+                        <p class="card-text">Our sixth service provides robust security solutions for peace of mind.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section
+
+
+
+
+<!-- project -->
+
+<section id="project" class="project-section text-center">
+  <div class="container">
+      <h2 class="mb-4 d-flex justify-content-center">Our Projects</h2>
+
+      <!-- Project Tabs -->
+      <ul class="nav nav-tabs justify-content-center mb-5" id="projectTabs" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="apps-tab" data-toggle="tab" href="#apps" role="tab" aria-controls="apps" aria-selected="false">Apps</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false">Product</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="branding-tab" data-toggle="tab" href="#branding" role="tab" aria-controls="branding" aria-selected="false">Branding</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="books-tab" data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books</a>
+          </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="projectTabsContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://resource-cdn.obsbothk.com/product_system_back/product_img/best-laptop-for-working-from-home.jpg" alt="Project 1">
+                          <div class="overlay">
+                              <h5>Project 1</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?cs=srgb&dl=pexels-life-of-pix-7974.jpg&fm=jpg" alt="Project 2">
+                          <div class="overlay">
+                              <h5>Project 2</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://cdn.pixabay.com/photo/2023/04/28/17/04/wrist-watch-7957073_1280.jpg" alt="Project 3">
+                          <div class="overlay">
+                              <h5>Project 3</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://cdn.pixabay.com/photo/2023/04/28/17/04/wrist-watch-7957073_1280.jpg" alt="Project 4">
+                          <div class="overlay">
+                              <h5>Project 4</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://resource-cdn.obsbothk.com/product_system_back/product_img/best-laptop-for-working-from-home.jpg" alt="Project 5">
+                          <div class="overlay">
+                              <h5>Project 5</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="project-img">
+                          <img src="https://resource-cdn.obsbothk.com/product_system_back/product_img/best-laptop-for-working-from-home.jpg" alt="Project 6">
+                          <div class="overlay">
+                              <h5>Project 6</h5>
+                              <p>Project Description</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Add similar content for each tab: Apps, Product, Branding, Books if needed -->
+      </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h2>Contact Us</h2>
+          <p>Feel free to reach out to us for any inquiries or assistance. We are here to help!</p>
+      </div>
+      <div class="row">
+          <!-- Contact Info & Map -->
+          <div class="col-md-5 mb-4">
+              <div class="contact-info text-left">
+                  <h5>Contact Information</h5>
+                  <p><strong>Location:</strong> 123 Main St, Anytown, USA</p>
+                  <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                  <p><strong>Email:</strong> contact@example.com</p>
+              </div>
+              <!-- <div class="map-embed mt-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0344011544196!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df12bff9%3A0x95a7f6b2c9289bd1!2s123%20Main%20St%2C%20Anytown%2C%20USA!5e0!3m2!1sen!2sus!4v1617166495794!5m2!1sen!2sus" 
+                          width="100%" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div> -->
+          </div>
+          <!-- Contact Form -->
+          <div class="col-md-7">
+              <div class="contact-form">
+                  <h4>Send Us a Message</h4>
+                  <form action="#" method="POST">
+                      <div class="form-group mb-3">
+                          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                      </div>
+                      <div class="form-group mb-3">
+                          <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 mb-4">
+              <h5>About Us</h5>
+              <p>We are committed to delivering the best services and solutions for our clients. Reach out to us for any inquiries or further information.</p>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4 footer-link">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+              <h5>Contact Us</h5>
+              <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+              <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+              <p><strong>Email:</strong> info@example.com</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Your Company. All Rights Reserved | Designed by <a href="#">Your Company</a></p>
+    </div>
+  </div>
+  
+</footer>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- <script src="./js/bootstrap.js"></script> -->
+      <script src="./js/index.js"></script>
+</body>
+</html>

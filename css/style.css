@@ -1,0 +1,270 @@
+
+/* CSS for overlay */
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .carousel-item {
+    position: relative;
+    height: 80vh; /* Set the height for the slider */
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+  .about-section {
+    padding: 100px 0;
+  }
+  .about-heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .tab-content h3 {
+    font-size: 3rem;
+    margin-top: 45px;
+  }
+  .tab-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+ 
+
+
+
+
+
+ .card {
+  background-color: #e9eef2;
+ }
+  .card:hover {
+    background-color: #FFF;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+/* .card:hover .card-title, 
+.card:hover .card-text, 
+.card:hover .btn {
+    color: #007bff;
+} */
+
+.card:hover .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.icon {
+    color: #007bff;
+}
+
+.card:hover .icon {
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+
+.project-section {
+  padding: 60px 0;
+}
+
+/* Overlay style */
+.project-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-img:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+/* Staggered layout */
+.row:nth-child(odd) .col-md-4:nth-child(1),
+.row:nth-child(odd) .col-md-4:nth-child(3) {
+  margin-top: 30px;
+}
+
+/* Tab buttons */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* General Section Styling */
+.contact-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e9ecef 100%);
+}
+
+.contact-info, .contact-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover, .contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info h5, .contact-form h4 {
+  font-weight: bold;
+  color: #151414;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Form Field Styling */
+.form-control {
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Submit Button Styling */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 15px rgba(0, 91, 187, 0.3);
+}
+
+/* Map Styling */
+.map-embed {
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #111d29;
+  color: #ddd;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer .footer-link a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .footer-link a:hover {
+  color: #007bff;
+}
+
+.social-icons a {
+  color: #ddd;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  background-color: #152535;
+  color: #aaa;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #0056b3;
+}
